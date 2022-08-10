@@ -1,0 +1,19 @@
+input.login{
+    width: 300px;
+}
+
+.card {
+    text-align: left;
+    width: 340px;
+    background-color: beige
+}
+
+.card-footer {
+    background-color:beige;
+    text-align: center;
+    border: 0;
+}
+
+button {
+    width: 250px;
+}

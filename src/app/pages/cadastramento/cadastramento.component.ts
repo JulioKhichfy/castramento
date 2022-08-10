@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-cadastramento',
+  templateUrl: './cadastramento.component.html',
+  styleUrls: ['./cadastramento.component.css']
 })
-export class HomeComponent implements OnInit {
+export class CadastramentoComponent implements OnInit {
 
   public candidato: string | undefined;
   

@@ -4,24 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule  } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { PessoasModule } from './pages/pessoa/pessoas.module';
-
 
 import { AppRoutingModule } from './app-routing.module';
-import { HomeModule } from './home/home.module';
+import { LoginModule } from './pages/login/login.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule ,
-    PessoasModule,
-    HomeModule,
+    HttpClientModule,
+    LoginModule,
     AppRoutingModule
   ],
   providers: [],
