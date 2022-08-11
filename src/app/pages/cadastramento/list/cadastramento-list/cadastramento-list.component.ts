@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Person } from 'src/app/model/person.model';
+import { PersonService } from '../../../../service/person.service';
 
 @Component({
   selector: 'app-cadastramento-list',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastramentoListComponent implements OnInit {
 
-  constructor() { }
+  persons:Person[]=[];
+
+  constructor(private personService:PersonService) { }
 
   ngOnInit(): void {
+    this.persons = this.personService.getPersons();
   }
 
 }

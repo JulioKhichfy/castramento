@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Person } from 'src/app/model/person.model';
+import { PersonService } from '../../service/person.service';
 
 @Component({
   selector: 'app-cadastramento',
@@ -8,11 +11,16 @@ import { Component, OnInit } from '@angular/core';
 export class CadastramentoComponent implements OnInit {
 
   public candidato: string | undefined;
-  
-  constructor() { }
+  persons:Person[]=[];
+  constructor(private personService:PersonService,
+    private router:Router) { }
 
   ngOnInit(): void {
     this.candidato = "Julio Cesar Khichfy";
+  }
+
+  listAll(){
+    this.router.navigate(['/persons']);
   }
 
 }

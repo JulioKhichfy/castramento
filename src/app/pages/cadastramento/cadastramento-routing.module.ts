@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastramentoComponent } from './cadastramento.component';
+import { CadastramentoListComponent } from './list/cadastramento-list/cadastramento-list.component';
 
 const cadastramentoRoutes: Routes = [
-  //{path:'./', component: CadastramentoComponent},
+  {path:'persons', component: CadastramentoListComponent},
 ];
 
 @NgModule({
