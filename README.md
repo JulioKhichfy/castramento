@@ -2,26 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 
-## Development server
+## Objetivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Criar um sistema contendo a inclusão, alteração, exclusão, consulta e listagem dos registros da 
+tabela Cadastramento. 
 
-## Code scaffolding
+Deverá criar API de interação com as telas a serem desenvolvidas, utilizando Java com autenticação 
+através de token. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O campo Estado será carregado através de um endpoint que será criado. 
 
-## Build
+Deverá existir uma tela principal, contendo os botões de acesso as funcionalidades, conforme 
+mockup existentes; 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Install
 
-## Running unit tests
+Execute `npm install` para gerar a pasta node_modules com as dependências do projeto, em seguida execute
+`ne serve` e navegue até `http://localhost:4200/`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
