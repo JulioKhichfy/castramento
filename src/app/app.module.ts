@@ -7,18 +7,18 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './pages/login/login.module';
-
+import { CadastramentoModule } from './pages/cadastramento/cadastramento.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     LoginModule,
+    CadastramentoModule,
     AppRoutingModule
   ],
   providers: [],

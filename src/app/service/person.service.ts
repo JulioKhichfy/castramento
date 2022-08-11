@@ -18,4 +18,14 @@ export class PersonService {
   getPersons():Person[]{
     return this.persons;
   }
+
+  findByNameAndCpf(name:string, cpf:string){
+    //return this.persons.filter(p => { p.name === name || p.cpf === cpf});
+    let result: Person[] = [];
+    for(let p of this.persons){
+      console.log("nome: " + p.name);
+      if(p.name === name || p.cpf === cpf) result.push(p);
+    }
+    return result;
+  }
 }

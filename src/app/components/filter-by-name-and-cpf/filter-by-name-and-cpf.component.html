@@ -1,0 +1,16 @@
+<div class='row justify-content-center'>
+    <div class='col-4 mb-3'>
+        <label for='exampleInputName' class='form-label'>Nome</label>
+        <input type='text' class='form-control' id='exampleInputName' [(ngModel)]='nameFromFilter'>
+    </div>
+    <div class='col-4 mb-3'>
+        <label for='exampleInputCPF' class='form-label'>CPF</label>
+        <input type='text' class='form-control' id='exampleInputCPF' [(ngModel)]='cpfFromFilter'>
+    </div>
+    <div class='col-2 mt-3'>
+        <button class='btn btn-primary' (click)='findUserByNameAndCPF()'>Buscar</button>
+    </div>
+    <div class='col-2 mt-3'>
+        <button class='btn btn-primary' (click)='getAll()'>Todos</button>
+    </div>
+</div>

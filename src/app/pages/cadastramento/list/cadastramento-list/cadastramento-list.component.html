@@ -1,37 +1,24 @@
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/cadastramento">Cadastramento</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">logout</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<app-header></app-header>
 
-<div class="container">
-    <app-filter-by-name-and-cpf></app-filter-by-name-and-cpf>
-<table class="table">
-    <thead class="list">
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Nome</th>
-        <th scope="col">CPF</th>
-        <th scope="col">Cidade</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let person of persons">
-        <th scope="row">{{person.id}}</th>
-        <td>{{person.name}}</td>
-        <td>{{person.cpf}}</td>
-        <td>{{person.city}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<div class='container'>
+  <app-filter-by-name-and-cpf (filterByNameAndCpf)="onFilterByNameAndCpf($event)" (all)="onGetAll($event)"></app-filter-by-name-and-cpf>
+  <table class='table'>
+      <thead class='list'>
+        <tr>
+          <th scope='col'>ID</th>
+          <th scope='col'>Nome</th>
+          <th scope='col'>CPF</th>
+          <th scope='col'>Cidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let person of persons'>
+          <th scope='row'>{{person.id}}</th>
+          <td>{{person.name}}</td>
+          <td>{{person.cpf}}</td>
+          <td>{{person.city}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class='btn btn-primary' routerLink="/cadastramento">Voltar</button>
+  </div>

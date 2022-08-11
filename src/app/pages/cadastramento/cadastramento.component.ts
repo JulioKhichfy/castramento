@@ -16,7 +16,7 @@ export class CadastramentoComponent implements OnInit {
     private router:Router) { }
 
   ngOnInit(): void {
-    this.candidato = "Julio Cesar Khichfy";
+    this.candidato = 'Julio Cesar Khichfy';
   }
 
   listAll(){
