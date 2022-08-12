@@ -8,7 +8,7 @@ import { AuthService } from '../../service/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
 
   title = 'Login';
   invalidUserMessage = '';
@@ -20,10 +20,6 @@ export class LoginComponent implements OnInit {
                 this.user.email='user@email.com';
                 this.user.password='123';
                }
-
-  ngOnInit(): void {
-  }
-
   login(){
     console.log(this.user);
     this.isAuth = this.authService.login(this.user);

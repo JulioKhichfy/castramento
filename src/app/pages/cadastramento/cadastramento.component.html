@@ -7,20 +7,18 @@
   </div>
 
   <div class='row mt-5'>
-    <div class='col-4'><button type='button' class='btn btn-primary btn-sm'>Incluir</button></div>
-    <div class='col-4'><button type='button' class='btn btn-primary btn-sm'>Alterar</button></div>
-    <div class='col-4'><button type='button' class='btn btn-primary btn-sm'>Excluir</button></div>
+    <div class='col-4'><button type='button' class='btn btn-primary' routerLink="/insert">Incluir</button></div>
+    <div class='col-4'><button type='button' class='btn btn-primary'>Alterar</button></div>
+    <div class='col-4'><button type='button' class='btn btn-primary'>Excluir</button></div>
   </div>
   
     <div class='row mt-5'>
-        <div class='col-3'></div>
-        <div class='col-3'><button type='button' class='btn btn-primary btn-sm'>Consultar</button></div>
-        <div class='col-3'><button type='button' class='btn btn-primary btn-sm' (click)='listAll()'>Listagem</button></div>
-        <div class='col-3'></div>
+      <div class='col-6'><button type='button' class='btn btn-primary'>Consultar</button></div>
+      <div class='col-6'><button type='button' class='btn btn-primary' (click)='listAll()'>Listagem</button></div>
     </div>
   
     <div class='row mt-5'>
-        <div class='col-12'><button type='button' class='btn btn-danger btn-sm' routerLink="/">Sair</button></div>
+        <div class='col-12'><button type='button ' class='btn btn-danger logout  btn-sm' routerLink="/">Sair</button></div>
     </div>
   </div>
   <router-outlet></router-outlet>

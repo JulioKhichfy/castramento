@@ -1,5 +1,5 @@
 export class Person {
-    id:string | undefined;
+    id:any;
     public name:string | undefined;
     public cpf:string | undefined;
     city:string | undefined;

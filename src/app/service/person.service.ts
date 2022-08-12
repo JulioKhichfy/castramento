@@ -28,4 +28,12 @@ export class PersonService {
     }
     return result;
   }
+
+  save(person:Person){
+    let id:number = +this.persons[this.persons.length - 1].id + 1;
+    console.log("novo id " + id);
+    person.id = id;
+    this.persons.push(person);
+
+  }
 }

@@ -5,3 +5,7 @@ button{
 p.candidato{
     font-size: 18px;
 }
+
+button.logout{
+    height: 30px;
+}

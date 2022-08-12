@@ -6,7 +6,7 @@ import { Person } from 'src/app/model/person.model';
   templateUrl: './filter-by-name-and-cpf.component.html',
   styleUrls: ['./filter-by-name-and-cpf.component.css']
 })
-export class FilterByNameAndCpfComponent implements OnInit {
+export class FilterByNameAndCpfComponent  {
 
   nameFromFilter:string='';
   cpfFromFilter:string='';
@@ -14,18 +14,11 @@ export class FilterByNameAndCpfComponent implements OnInit {
   @Output() filterByNameAndCpf = new EventEmitter();
   @Output() all = new EventEmitter();
 
-  constructor() { 
-   
-  }
-
-  ngOnInit(): void {
-    
-  }
+  constructor() { }
 
   findUserByNameAndCPF(){
     console.log('FilterByNameAndCpfComponent >>> Nome: ' + this.nameFromFilter + ' - ' + 'CPF: ' + this.cpfFromFilter);
     this.filterByNameAndCpf.emit({name:this.nameFromFilter, cpf:this.cpfFromFilter});
-    
   }
 
   getAll(){

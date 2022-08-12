@@ -8,6 +8,7 @@ import { CadastramentoEditComponent } from './edit/cadastramento-edit/cadastrame
 import { PersonService } from 'src/app/service/person.service';
 import { FormsModule } from '@angular/forms';
 import { FilterByNameAndCpfModule } from 'src/app/components/filter-by-name-and-cpf/filter-by-name-and-cpf.module';
+import { StateService } from '../../service/state.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FilterByNameAndCpfModule } from 'src/app/components/filter-by-name-and-
     FilterByNameAndCpfModule
   ],
   providers:[
-    PersonService
+    PersonService,
+    StateService
   ]
 })
 export class CadastramentoModule { }
